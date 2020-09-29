@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function First() {
+export default () => {
   const x = ':)'
+
   return (
     <div>
       <h2>First Component</h2>
