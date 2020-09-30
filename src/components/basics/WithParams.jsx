@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default ({ note, title, student }) => {
+const WithParams = ({ note, title, student }) => {
   const status = note >= 7 ? 'approved' : 'disapproved'
+
+  if(!student.length) {
+    return <p>Student name has not been defined</p>
+  }
 
   return (
     <div>
@@ -12,3 +16,10 @@ export default ({ note, title, student }) => {
     </div>
   )
 }
+
+WithParams.defaultProps = {
+  note: 0,
+  title: 'Title'
+}
+
+export default WithParams
