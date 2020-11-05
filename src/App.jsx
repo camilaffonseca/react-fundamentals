@@ -14,7 +14,7 @@ const App = () => (
 
     <div className='Cards'>
       <Card title='#04 - Random Challenge'>
-        <Random min={0} max={100}/>
+        <Random min={0} max={100} />
       </Card>
 
       <Card title='#03 - Fragment Component'>
@@ -23,7 +23,8 @@ const App = () => (
 
       <Card title='#02 - WithParams Component'>
         <WithParams title='Student 1 Situation' student='X' note={9.0} />
-        <WithParams title='Student 2 Situation' student='Y' note={4.1}/>
+        <WithParams title='Student 2 Situation' student='Y' note={4.1} />
+        <WithParams title='Student 3 Situation' student='Z' note={6.1} />
       </Card>
 
       <Card title='#01 - First Component'>
